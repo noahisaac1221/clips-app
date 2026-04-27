@@ -131,7 +131,7 @@ export default function VideoProcessor({ clip, accountType }: Props) {
       await ffmpeg.exec(args)
 
       const data = await ffmpeg.readFile('output.mp4')
-      const blob = new Blob([(data as Uint8Array).buffer], { type: 'video/mp4' })
+      const blob = new Blob([data as Uint8Array], { type: 'video/mp4' })
       const url = URL.createObjectURL(blob)
       setOutputUrl(url)
       setStage('done')

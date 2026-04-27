@@ -1,0 +1,21 @@
+# deps
+node_modules/
+
+# build outputs
+.next/
+.vercel/
+out/
+
+# env
+.env
+.env.local
+.env.*.local
+.dev.vars
+
+# OS
+.DS_Store
+Thumbs.db
+
+# misc
+*.log
+npm-debug.log*

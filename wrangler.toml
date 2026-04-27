@@ -1,0 +1,7 @@
+name = "clipops-app"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+[vars]
+# Set ANTHROPIC_API_KEY in the Cloudflare Pages dashboard under Settings > Environment variables
